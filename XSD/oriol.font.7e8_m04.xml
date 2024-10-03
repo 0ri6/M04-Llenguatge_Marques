@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<!--  Exemple vàlid  -->
+<!--  Exemple vàlid   -->
 <receptes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="oriol.font.7e8_m04.xsd">
     <recepta dificultat="5">
