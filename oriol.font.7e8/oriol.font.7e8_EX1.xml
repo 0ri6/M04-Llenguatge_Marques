@@ -1,0 +1,30 @@
+<?xml version="1.0"encoding="UTF-8"?>
+<guia>GuiaMuntanya
+<ruta>
+    <nomruta1> La Travessa Cavalls del vent </nomruta1>
+    <distancia> 84km </distancia>
+    <desnivell> 4500m </desnivell>
+    <refugis>
+        <refugi> Refugi Lluís Estasen </refugi>
+        <refugi> Refugi de Gresolet </refugi>
+        <refugi> Refugi Sant Jordi </refugi>
+        <refugi> Refugi de Rebost </refugi>
+        <refugi> Refugi el Niu de l’Àliga </refugi>
+        <refugi> Refugi del Serrat de les Esposes </refugi>
+        <refugi> Refugi de Cortals de l’Ingla </refugi>
+        <refugi> Refugi de Prat d’Aguiló </refugi>
+    </refugis>
+</ruta>
+<ruta>
+    <nomruta2> Travessa Carros de Foc </nomruta2>
+    <distancia> 70km </distancia>
+    <desnivell> 4600m </desnivell>
+    <refugis>
+        <refugi> Refugi de Saboredo </refugi>
+        <refugi> Refugi de Restanca </refugi>
+        <refugi> Refugi Ventosa i Calvell </refugi>
+        <refugi> Refugi Estany Llong </refugi>
+        <refugi> Refugi Josep Maria Blanc </refugi>
+    </refugis>
+</ruta>
+</guia>
