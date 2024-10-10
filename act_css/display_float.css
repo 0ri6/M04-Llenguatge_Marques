@@ -1,0 +1,19 @@
+#leftfloat{
+    float: left;
+    border: solid #cbebdb 5px;
+    background-color: #cbebdb;
+    margin: 20px;
+    height: 100px;
+    width: 150px;
+    border-radius:10px;
+}
+
+#rightfloat{
+    float: right;
+    border: solid #cbebdb 5px;
+    background-color: #cbebdb;
+    margin: 20px;
+    height: 100px;
+    width: 150px;
+    border-radius:10px;
+}

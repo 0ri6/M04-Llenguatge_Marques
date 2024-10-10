@@ -1,0 +1,7 @@
+div{
+    display: flex;
+    flex-direction: column;
+    background-color: #b0dce4;
+    flex-wrap: wrap;
+
+}

@@ -1,0 +1,45 @@
+
+#centered_small_icon{
+    background-color: blue;
+    background-size: 50px;
+    background-position: center;
+    background-image: url("https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg");
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#green_line{
+    background-color: green;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+#full_width_icon{
+    background-color: red;
+    background-size: 525px;
+    background-position: center;
+    background-image: url("https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg");
+    background-repeat: no-repeat;
+    width: 550px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+#repeated_icon{
+    background-color: blueviolet;
+    background-size: 50px;
+    background-image: url("https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg");
+    width: 570px;
+    height: 200px;
+    margin: 0 auto;
+}
