@@ -1,0 +1,35 @@
+#figure1{
+    background-color: #20b2aa ;
+    border: 1px black solid;
+
+}
+
+#figure3 {
+    background-color: #fafad2;
+    border: 1px black solid;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+@media (min-width: 600px) {
+    #figure1{
+        font-size: xxx-large;
+        font-weight: bold;
+
+    }
+    #figure2{
+        background-color: #ffa07a;
+        border: 1px black solid;
+
+    }
+    #figure3{
+        padding-left: 7%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+@media (max-width: 600px) {
+    #figure2{
+        display: none;
+    }
+}

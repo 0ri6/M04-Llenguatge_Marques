@@ -1,7 +1,52 @@
-div{
+nav{
     display: flex;
-    flex-direction: column;
     background-color: #b0dce4;
-    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    justify-content: center;
+}
+.button{
+    padding: 10px;
+}
+#first {
+    flex-direction: row;
+    text-align: center;
+    .button{
+        flex-grow: 1;
+    }
+}
 
+#second {
+    flex-direction: column-reverse;
+    }
+#third {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+#forth {
+
+    .button {
+        background-color: lightgreen;
+        margin: 5px;
+        flex-grow: 1;
+    }
+    .b1{
+        order: 2;
+    }
+    .b2{
+        flex-grow: 4;
+        order: 3;
+    }
+    .b3{
+        order: 1;
+    }
+}
+
+@media (max-width: 600px){
+    .button{
+        border: 1px black solid;
+    }
 }
