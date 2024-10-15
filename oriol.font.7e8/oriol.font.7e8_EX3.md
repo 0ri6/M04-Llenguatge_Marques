@@ -14,3 +14,4 @@
 2. Deixeu que el mató es vagi escorrent a la nevera i que es refredi: com a mínim 1 h.
 ## Bibliografia
 [ReceptesCartesianes.cat](https://www.receptescartesianes.cat/recipes/353)
+ 
