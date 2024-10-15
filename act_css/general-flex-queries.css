@@ -1,0 +1,36 @@
+header{
+    background-color: black;
+    height: 250px;
+    padding-left: 80px;
+    padding-top: 60px;
+    }
+
+h1{
+    color: white;
+}
+a{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+img{
+
+    margin: 10px;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
