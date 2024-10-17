@@ -1,0 +1,34 @@
+main {
+    background-color: #A4D3FF;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+
+}
+
+#clouds{
+    width: 1000px;
+    height: 80px;
+    background-repeat: repeat;
+    background-image: url("clouds.png");
+    position: absolute;
+}
+
+#base{
+    background-image: url("base.png");
+    bottom: 0;
+    width: 1000px;
+    height: 16px;
+    position: absolute;
+}
+
+#mario{
+    background-image: url("mario.png");
+    bottom: 0;
+    width: 50%;
+    height: 114px;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
