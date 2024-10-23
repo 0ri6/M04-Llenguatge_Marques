@@ -6,7 +6,7 @@ body{
     margin:0;
 }
 header{
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     display: flex;
     align-items: center;
     padding: 10px;
@@ -17,7 +17,7 @@ header{
 
 .btn {
     text-decoration: none;
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     color: black;
     padding: 10px 20px;
     border-radius: 5px;
@@ -28,16 +28,16 @@ header{
     margin-left: 1400px;
 }
 .btn:hover {
-    background-color: #5B5331;
+    background-color: #b1b1b1;
 }
 
 #inici1 {
-    color: white;
+    color: black;
     background-repeat: no-repeat;
     width: 1820px;
     height: 250px;
     padding-top: 10px;
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
 
 }
@@ -45,41 +45,41 @@ header{
 #tortuga{
     width: 500px;
     height: 600px;
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
 }
 
 #nutria{
     width: 500px;
     height: 450px;
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
 
 }
 #ratpenat{
     width: 500px;
     height: 400px;
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     border-radius: 10px;
 
 }
 
 #biblio{
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     width: 500px;
     height: 100px;
     border-radius: 10px;
 }
 
 #llicencia{
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     width: 500px;
     height: 200px;
     border-radius: 10px;
 }
 
 #seguir{
-    background-color: rgba(113,105,69,0.75);
+    background-color: rgba(255,255,255,0.7);
     width: 500px;
     height: 100px;
     border-radius: 10px;
@@ -87,3 +87,4 @@ header{
 .1{
 display: grid;
 }
+
