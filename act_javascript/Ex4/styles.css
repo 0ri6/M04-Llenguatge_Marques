@@ -1,0 +1,8 @@
+.colorear{
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 15px 75% 15px 0;
+    text-align: center;
+    transition: 5s;
+}
