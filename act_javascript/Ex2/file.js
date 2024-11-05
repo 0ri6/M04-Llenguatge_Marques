@@ -6,7 +6,7 @@ buttons.forEach(button => {
         const resultParagraphs = document.querySelectorAll(".result");
 
         resultParagraphs.forEach(paragraph => {
-            paragraph.innerText = "One button clicked";
+            paragraph.innerText = "One button clicked 🫡🫡";
         });
     });
 })
