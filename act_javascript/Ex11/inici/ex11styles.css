@@ -73,7 +73,7 @@ nav ul li {
     font-weight: bold;
     border-radius: 5px;
     border: 2px solid #6364FF;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.4s, transform 0.3s;
 }
 .nav-button-mastodon:hover {
     background-color: white;
@@ -90,7 +90,7 @@ nav ul li {
     font-weight: bold;
     border-radius: 5px;
     border: 2px solid #F583C5;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.4s, transform 0.3s;
 }
 .nav-button-diaspora:hover {
     background-color: white;
