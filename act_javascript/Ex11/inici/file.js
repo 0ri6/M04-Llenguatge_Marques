@@ -1,3 +1,4 @@
+
 // Funció per validar el formulari
 function validarFormulari(event) {
     // Obtenir els valors dels camps
@@ -57,5 +58,11 @@ function validarFormulari(event) {
     }
 }
 
-// Afegir l'esdeveniment al formulari
+ // Afegir l'esdeveniment al formulari
 document.getElementById('contactForm').addEventListener('submit', validarFormulari);
+
+
+
+
+
+
