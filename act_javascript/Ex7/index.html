@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercici 7 Javascript</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scoreboard-container">
+  <div class="team-score">
+    <h2>LOCAL</h2>
+    <div class="score" id="scoreHome">00</div>
+    <button onclick="incrementarGols('local')">+1</button>
+    <button onclick="reduirGols('local')">-1</button>
+  </div>
+
+  <div class="timer">
+    <h2>TEMPS</h2>
+    <div id="time">00:00</div>
+    <button onclick="iniciarTemporitzador()">Start</button>
+    <button onclick="pararTemporitzador()">Stop</button>
+    <button onclick="reiniciarTemporitzador()">Reset</button>
+  </div>
+
+  <div class="team-score">
+    <h2>VISITANT</h2>
+    <div class="score" id="scoreAway">00</div>
+    <button onclick="incrementarGols('visitant')">+1</button>
+    <button onclick="reduirGols('visitant')">-1</button>
+  </div>
+</div>
+
+<script src="file.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+section {
+    background-color: rgba(118,144,179,0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+p {
+    font-size: 20px;
+}
+#video_background {
+    position: fixed; /* Cambiado de absolute a fixed */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    object-fit: cover; /* Asegura que el video cubra toda el área */
+    z-index: -1; /* Coloca el video por debajo del contenido */
+    transition: opacity 1s ease-in-out; /* Hacemos que el video se desvanezca */
+    opacity: 1;
+}
+
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulari</title>
+  <link rel="stylesheet" href="ex11styles.css">
+  <script src="file.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>EPEPC</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a id="inici" href="index.html" class="nav-button">Inici</a></li>
+    <li><a id="list" href="list.html" class="nav-button">Llistat</a></li>
+    <li><a id="contact" href="ex11contact.html" class="nav-button">Contacte</a></li>
+  </ul>
+</nav>
+
+<section>
+  <h1>Contacta</h1>
+  <form id="contactForm" action="https://formspree.io/f/xkgnwwyk" method="post">
+    <div>
+      <label for="name">El teu nom:</label>
+      <input type="text" id="name" name="user_name">
+    </div>
+    <div>
+      <label for="mail">El teu correu electrònic:</label>
+      <input type="email" id="mail" name="user_mail">
+    </div>
+    <div>
+      <label for="title">Títol:</label>
+      <input type="text" id="title" name="title">
+    </div>
+    <div>
+      <label for="msg">Missatge:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">Enviar Missatge</button>
+    </div>
+    <div id="errorMessages"></div> <!-- Per mostrar els errors -->
+  </form>
+</section>
+
+<section>
+  <h1>Llicència</h1>
+  <p>Pàgina web creada per Oriol Font</p>
+  <p>Llicència <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/deed.ca">Creative Commons Reconeixement-NoComercial-CompartirIgual 3.0</a></p>
+  <img id="imgCreativeCommons" src="img/license.png" alt="Creative Commons">
+</section>
+
+<section id="contacta">
+  <h1>Segueix-nos</h1>
+   <a href="https://joinmastodon.org/ca" class="nav-button">Mastodon</a>
+    <a href="https://diasporafoundation.org/" class="nav-button">Diaspora</a>
+</section>
+
+<footer>
+  <p>&copy; 2024 EPEPC</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercici 8 Javascript</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="file.js"></script>
+</head>
+<body>
+<h1>Formulari </h1>
+<form id="formulariPersonal">
+  <label for="nom">Nom:</label>
+  <input type="text" id="nom">
+
+  <label for="cognoms">Cognoms:</label>
+  <input type="text" id="cognoms">
+
+  <label for="adreca">Adreça:</label>
+  <input type="text" id="adreca">
+
+  <label for="edat">Edat:</label>
+  <input type="number" id="edat">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email">
+
+  <label for="telefon">Telèfon:</label>
+  <input type="tel" id="telefon">
+
+  <div id="campsTutor" style="display: none;">
+    <h3>Dades del tutor</h3>
+    <label for="nomTutor">Nom del tutor:</label>
+    <input type="text" id="nomTutor">
+
+    <label for="cognomsTutor">Cognoms del tutor:</label>
+    <input type="text" id="cognomsTutor">
+  </div>
+
+  <button type="submit">Enviar</button>
+</form>
+
+<div id="missatgeError" style="display: none; color: red; margin-top: 15px;"></div>
+
+<div id="missatgeExit" style="display: none;">
+  <p>Formulari enviat correctament!</p>
+</div>
+
+</body>
+</html>
