@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: lightgreen;
     color: #333;
     line-height: 1.6;
     padding-top: 80px; /* Deixar espai per la barra de navegació fixa */
@@ -16,7 +16,7 @@ body {
 /* Estils del capçalera */
 header {
     background-color: #333;
-    color: white;
+    color: lightgreen;
     text-align: center;
     padding: 20px;
     margin-bottom: 40px;
@@ -63,6 +63,39 @@ nav ul li {
     border: 2px solid #4CAF50;
     transition: background-color 0.3s, transform 0.3s;
 }
+.nav-button-mastodon {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6364FF;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #6364FF;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.nav-button-mastodon:hover {
+    background-color: white;
+    color: #6364FF;
+}
+
+.nav-button-diaspora {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F583C5 ;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #F583C5;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.nav-button-diaspora:hover {
+    background-color: white;
+    color: #F583C5;
+}
 
 .nav-button:hover {
     background-color: white;
@@ -74,19 +107,14 @@ nav ul li {
 section#contacta a {
     display: inline-block;
     text-align: center;
-    background-color: #4CAF50;
-    color: white;
     font-size: 1.1rem;
     padding: 12px 30px;
     margin: 10px;
     border-radius: 5px;
-    border: 2px solid #4CAF50;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 section#contacta a:hover {
-    background-color: white;
-    color: #4CAF50;
     transform: translateY(-3px);
 }
 
@@ -95,11 +123,11 @@ section {
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
-    background-color: white;
+    background-color: rgba(255,255,255,0.65);
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 40px;
-    opacity: 1; /* Garantizamos que la opacidad siempre sea 1 (visible) */
+    opacity: 1;
 }
 
 section h1 {

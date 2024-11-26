@@ -26,23 +26,26 @@
     <div>
       <label for="name">El teu nom:</label>
       <input type="text" id="name" name="user_name">
+      <span id="nomError" style="color:red;"></span>
     </div>
     <div>
       <label for="mail">El teu correu electrònic:</label>
       <input type="email" id="mail" name="user_mail">
+      <span id="correuError" style="color:red;"></span>
     </div>
     <div>
       <label for="title">Títol:</label>
       <input type="text" id="title" name="title">
+      <span id="titolError" style="color:red;"></span>
     </div>
     <div>
       <label for="msg">Missatge:</label>
       <textarea id="msg" name="user_message"></textarea>
+      <span id="missatgeError" style="color:red;"></span>
     </div>
     <div class="button">
       <button type="submit">Enviar Missatge</button>
     </div>
-    <div id="errorMessages"></div> <!-- Per mostrar els errors -->
   </form>
 </section>
 
@@ -55,8 +58,8 @@
 
 <section id="contacta">
   <h1>Segueix-nos</h1>
-   <a href="https://joinmastodon.org/ca" class="nav-button">Mastodon</a>
-    <a href="https://diasporafoundation.org/" class="nav-button">Diaspora</a>
+   <a href="https://joinmastodon.org/ca" class="nav-button-mastodon">Mastodon</a>
+    <a href="https://diasporafoundation.org/" class="nav-button-diaspora">Diaspora</a>
 </section>
 
 <footer>
