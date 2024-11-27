@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="receptes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="recepta" maxOccurs="100">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="autor" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nom" type="xs:string"/>
+                                        <xs:element name="dni">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="[0-9]{8}[A-Z]"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nom" type="xs:string"/>
+                            <xs:element name="ingredients" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ingredient">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="quantitat">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="valor" type="xs:integer"/>
+                                                                <xs:element name="mesura" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="nom" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="passos">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pas" type="xs:string" maxOccurs="100"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="dificultat">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0"/>
+                                    <xs:maxInclusive value="10"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="categoria">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="primer"/>
+                                    <xs:enumeration value="segon"/>
+                                    <xs:enumeration value="postre"/>
+                                    <xs:enumeration value="altres"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
