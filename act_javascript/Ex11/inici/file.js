@@ -1,5 +1,4 @@
-
-// Funció per validar el formulari
+// Funció per validar i gestionar l'enviament del formulari
 function validarFormulari(event) {
     // Obtenir els valors dels camps
     const nom = document.getElementById('name').value;
@@ -55,14 +54,35 @@ function validarFormulari(event) {
     // Si hi ha errors, evitar el submit del formulari
     if (errors.length > 0) {
         event.preventDefault(); // Evitar que el formulari es presenti
+    } else {
+        // Si no hi ha errors, mostrar missatge d'èxit i aplicar animació
+        event.preventDefault(); // Evitar el submit per provar la simulació
+        const successMessage = document.createElement('div');
+        successMessage.id = 'successMessage';
+        successMessage.textContent = 'S\'ha enviat correctament! Gràcies per tot!';
+        document.querySelector('section').appendChild(successMessage);
+
+        // Aplicar animació al missatge d'èxit
+        successMessage.style.animation = 'successAnimation 1s forwards';
+
+        // Fer desaparèixer el formulari després de l'enviament
+        setTimeout(function() {
+            document.getElementById('contactForm').style.animation = 'formDisappear 1s ease forwards';
+            successMessage.style.display = 'block';  // Mostrar el missatge d'èxit
+        }, 2000); // Després de 2 segons, comença a desaparèixer el formulari
+
+        // Fer tornar a aparèixer el formulari després de 10 segons i netejar-lo
+        setTimeout(function() {
+            // Netejar els camps del formulari
+            document.getElementById('contactForm').reset(); // Neteja tots els camps del formulari
+
+            // Fer tornar a aparèixer el formulari
+            document.getElementById('contactForm').style.display = 'block';
+            successMessage.style.display = 'none';  // Amagar el missatge d'èxit
+            document.getElementById('contactForm').style.animation = '';  // Eliminar animació de desaparició
+        }, 12000); // Després de 10 segons, el formulari torna a aparèixer
     }
 }
 
- // Afegir l'esdeveniment al formulari
+// Afegir l'esdeveniment al formulari
 document.getElementById('contactForm').addEventListener('submit', validarFormulari);
-
-
-
-
-
-
