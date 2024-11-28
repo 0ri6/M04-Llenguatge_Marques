@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 70px;
+    padding-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    margin-left: 15px;
+}
+
+.text {
+    background: url('resources/backgound.jpg');
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+    cursor: pointer;
+}
+
+.papallones {
+    padding: 20px;
+    text-align: left;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.papallona {
+    position: relative;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.papallona img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.papallona p {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .text{
+        height: 350px;
+        text-align: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    header{
+        flex-direction: column;
+        height: auto;
+    }
+    .papallones h3{
+        font-size: 25px;
+    }
+    .papallona {
+        height: 250px;
+        width: 250px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .papallona p {
+        font-size: 20px;
+    }
+    nav a {
+        margin: 5px 0;
+
+    }
+}
+
+
+
+
